@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Dvojstĺpcový layout webu - opakovanie</title>
+    <style>
+        .hlavny {
+            display: flex;
+            flex-direction: column;
+            background-color: lightskyblue;
+            padding: 50px; /* Nastavili sme vnutorny okraj tohto kontajnera, cize vsetko v nom bude zacinat vo vnutri. Jedno cislo znamena, ze tie okraje nastavene z kazdej strany */
+        }
+        .hlavicka, .patka {
+            background-color: turquoise;
+            height: 100px;
+            padding: 20px;
+        }
+        .patka {
+            margin-top: 20px;
+        }
+        .telo {
+            /*background-color: red;*/
+            display: flex;
+            flex-direction: row;
+        }
+        .lavy {
+            background-color: springgreen;
+            width: 30%;
+            height: 500px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .pravy {
+            background-color: darkorange;
+            width: 70%;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 20px;
+        }
+        .pravy-telo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pravy-telo-lavy-image, .pravy-telo-stredny-image, .pravy-telo-pravy-image {
+            width: 20%;
+            background-color: yellow;
+            margin: 20px;
+        }
+
+        .patka-logo {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .obrazok {
+            width: 30%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="hlavny">
+    <header class="hlavicka">Apartmany Bardejov</header>
+    <div class="telo">
+        <div class="lavy">Ubytovacie zariadenie Centrum Apartman LEYLA sa nachádza v Bardejove 10 km od Kostola sv. Františka z Assisi v obci Hervartovo a 35 km od Duklianskeho bojiska. V jeho okolí sa hostia môžu venovať pešej turistike. Tento Apartmán s výhľadom do záhrady a na mesto je vybavený bezplatným Wi-Fi.
+            Apartmán má 3 spálne, vybavenú kuchyňu s umývačkou riadu a mikrovlnnou rúrou a 1 kúpeľňu s bidetom. K vybaveniu patrí káblová TV s plochou obrazovkou a práčka. K dispozícii sú aj uteráky a posteľná bielizeň.
+
+            Národný park Magura je od apartmánu vzdialený 41 km. Medzinárodné letisko Košice, ktoré je k ubytovaniu Centrum Apartman LEYLA najbližšie, sa nachádza vo vzdialenosti 90 km. Za príplatok ponúka ubytovacie zariadenie letiskový transfer.</div>
+        <div class="pravy">
+            <div>Najobľúbenejšie vybavenie
+
+                <div></div>
+                Bezplatné parkovisko
+                <div></div>
+                Bezplatné Wi-Fi
+                <div></div>
+                Nefajčiarske izby
+                <div></div>
+                Letiskový transfer</div>
+            <div class="pravy-telo">
+                <div class="pravy-telo-lavy-image">
+
+                    <img src="images/Leyla 1.jpg" height="200" width="200"/><div>
+
+                <div class="pravy-telo-stredny-image">
+                    Stredný Image
+                </div>
+
+                <div class="pravy-telo-pravy-image">
+                    Pravý Image
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="patka">Nejaká pätka</footer>
+    <div class="patka-logo">
+        <img src="../slovensko.gif" class="obrazok">
+    </div>
+    <!-- TODO Doplnit napravo logo, v praxi byva akykolvek obsah tiez v kontajneri, cize v DIV-e. -->
+</div>
+</body>
+</html>
+<!-- TODO "Kontrola" 19.35 -->

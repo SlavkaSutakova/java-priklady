@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Jednosĺpcový layout webu - opakovanie</title>
+    <style>
+        .hlavny {
+            background-color: red;
+            display: flex; /* Zobraz "obsah", teda kontajnery (div) vo vnutri vedla seba */
+            flex-direction: column; /* Touto vlastnostou nastavime "obsah", ktory sa bude zobrazovat pod sebou */
+
+        }
+        .hlavicka {
+            background-color: blue;
+            height: 50px; /* Nastavili sme vysku hlavicky na 50 pixelov */
+        }
+        .telo {
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+        }
+        .patka {
+            background-color: yellow;
+        }
+        .lavy {
+            background-color: orange;
+            width: 35%;
+        }
+        .pravy {
+            background-color: #9c27b0;
+            width: 65%;
+
+        }
+        .lavy-horny {
+            background-color: violet;
+
+        }
+        .lavy-dolny {
+            background-color: lightgreen;
+        }
+        .pravy-horny {
+            background-color: orange;
+        }
+        .pravy-dolny {
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hlavny">
+    <header class="hlavicka">Hlavička</header>
+    <div class="telo">
+        <div class="lavy">
+            <div class="lavy-horny">Ľavý horný</div>
+            <div class="lavy-dolny">Ľavý dolný</div>
+        </div>
+        <div class="pravy">
+            <div class="pravy-horny">Pravý horný</div>
+            <div class="pravy-dolny">Pravý dolný</div>
+        </div>
+    </div>
+    <div class="nad-patkou">Nad pätkou</div>
+    <footer class="patka">Pätka</footer>
+</div>
+
+</body>
+</html>
